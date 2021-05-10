@@ -1,0 +1,55 @@
+using System;
+
+
+
+namespace Salary
+
+{
+
+    class Program
+
+    {
+
+        static void Main(string[] args)
+
+        {
+
+            Console.WriteLine( " Enter your gross salary :");
+
+           string str = Console.ReadLine();
+
+            int salary = Convert.ToInt32(str);
+
+            if (salary <= 500) { Console.WriteLine("Salary too low, ask for a salary increase!"); }
+
+            else if (salary !>= 1200)
+            {
+                Console.WriteLine("The salary is too high, have to pay extra tax");
+
+            }
+            else { Console.WriteLine("Do you want to know your net salary, write yes, no"); }
+
+            string shape = Console.ReadLine();
+
+            if (shape == "yes")
+            {
+
+                double a = (salary - 20 % -0.5);
+
+}
+            else { Console.WriteLine("Do you want to know your net salary for a year, write yes, no"); }
+
+            if (shape == "yes")
+            {
+
+                double b = (salary - 20 % -0.5 %12);
+            
+}
+            else { Console.WriteLine("Do you want to know your net salary, write yes, no"); }
+
+                double c = ( salary - 20.5 %1);
+        }
+
+
+}
+}
